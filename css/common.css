@@ -1,0 +1,60 @@
+body{
+  font-family: SourceHanSansCN-ExtraLight;
+}
+/*css for white nav*/
+.masthead{
+  background-color: #fff;
+  padding: 20px 5px 20px 10px;
+  position: absolute;
+  top:0%;
+  z-index: 1;
+  font-size: 18px;
+}
+img.masthead-brand{
+  width:15%;
+}
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 50px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  color: #bba60d;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+/*主导航*/
+.mainnav{
+  position: fixed;
+  top: -82px;
+  left: 0;
+
+}
+/*css for section*/
+.screen_bg{
+  width:100%;
+  height:100%;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+/*字体*/
+@font-face { 
+font-family: SourceHanSansCN-ExtraLight; 
+src: url('../fonts/SourceHanSansCN-ExtraLight.otf'); 
+} 
