@@ -1,17 +1,58 @@
 $(function(){
-	//fullpage
-    $('#dowebok').fullpage();
+    IsPC();
+    function IsPC() {
+        var userAgentInfo = navigator.userAgent;
+        var Agents = ["Android", "iPhone",
+                    "SymbianOS", "Windows Phone",
+                    "iPad", "iPod"];
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+            }
+        }
+        return flag;
+    }
+    if(IsPC() == true){
+        function showDetail(index){
+            var _this = '.serie-plus_' + index;
+            $(_this).on('click',function(){
+                if($(this).text()=='+'){
+                    $(this).text('x');
+                    $(this).parent().siblings().show();
+                }
+                else if($(this).text()=='x'){
+                    $(this).text('+');
+                    $(this).parent().siblings().hide();
+                }
+            });
+        }
+        
+        //fullpage
+        $('#dowebok').fullpage({
+            afterLoad: function(anchorLink, index){
+                var _this = $(this);
+                addAnimate(_this,'.pull-left','.pull-right');
+                function addAnimate(page,target1,target2){
+                    var _thisL = $(page).find(target1),
+                        _thisR = $(page).find(target2),
+                        _that = $(page).siblings().find('.serflag');
+                    _thisL.animate({'marginTop':'25px'},"slow");
+                    _thisR.animate({'marginTop':'90px'});
+                    _that.animate({'marginTop':'50px'});
+                }
+            },
+        });
+        for(i = 1; i <= 8; i++){
+            showDetail(i);
+        };
+        //series' detail toggle
+        
+    }
+    else{
+        $('html,body').css('overflow','auto');
+    }
+    
 
-    //series' detail
-    $('.serie-plus').click(function(){
-    	if($(".serie-plus").text()=='+'){
-    		$(".serie-plus").text('x');
-    		$(".serie-plus").parent().siblings().show();
-    	}
-    	else if($(".serie-plus").text()=='x'){
-    		$(".serie-plus").text('+');
-    		$(".serie-plus").parent().siblings().hide();
-    	}
-    	
-    });
 });

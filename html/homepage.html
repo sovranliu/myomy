@@ -7,292 +7,326 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="MY-O-MY home">
     <meta name="author" content="luella">
-
+    <meta http-equiv="pragma" content="">
+    <meta http-equiv="Cache-Control" content="">
+    <meta http-equiv="expires" content="0">
     <title>MY-O-MY | Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/swipe.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="../css/about_us.css" rel="stylesheet">
     <link href="../css/homepage.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/jquery.fullPage.css">
-    <link rel="stylesheet" href="../css/common.css">
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <link href="../css/jquery.fullPage.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
     <script src="../jquery/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
 
-    <div class="container">
-    <div class="masthead mainnav clearfix">
-        <img src="../images/myomy.png" class="img-responsive masthead-brand" alt="MY-O-MY">
-        <nav>
-            <ul class="nav masthead-nav">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">BRAND</a></li>
-                <li><a href="#">SERIES</a></li>
-                <li><a href="#">STORES</a></li>
-                <li><a href="#">NEWS</a></li>
-                <li><a href="#">THE MAISON</a></li>
-            </ul>
-        </nav>
-    </div>
-    <!-- Home page-->
-    <div id="dowebok">
-        <div class="section screen_one">
-          <!-- Fixed navbar -->
-          <div class="masthead hidden-xs hidden-sm">
-              <img src="../images/myomy.png" class="img-responsive center-block nav-img" alt="MY-O-MY">
-              <div class="nav_line"></div>
-              <nav>
-                <ul class="nav nav-justified center-block">
-                  <li><a href="#">HOME</a></li>
+    <div class="container hidden-xs hidden-sm">
+      <div class="masthead mainnav clearfix">
+        <div class="nav-wrap-pc clearfix">
+          <!--<p class="nav-log">
+            <span>-->
+              <img src="../images/myomy.png" class="img-responsive masthead-brand" alt="MY-O-MY">
+            <!--</span>
+          </p>-->
+          <nav>
+              <ul class="nav masthead-nav">
+                  <li><a href="homepage.html">HOME</a></li>
                   <li><a href="#">BRAND</a></li>
-                  <li><a href="#">SERIES</a></li>
-                  <li><a href="#">STORES</a></li>
-                  <li><a href="#">NEWS</a></li>
-                  <li class="active"><a href="#">ABOUT US</a></li>
-                </ul>
-              </nav>
-              <div class="nav_line"></div>
-          </div>
-          
-          <div class="nav-m visible-xs visible-sm">
-            
-            <nav>
-            <ul class="nav">
-            <li class="dropdown">
-              <a href="#" id="js_dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">BRAND</a></li>
-                <li><a href="#">SERIES</a></li>
-                <li><a href="#">STORES</a></li>
-                <li><a href="#">NEWS</a></li>
-                <li><a href="#">ABOUT US</a></li>
+                  <li><a href="series.html">SERIES</a></li>
+                  <li><a href="store.html">STORES</a></li>
+                  
+                  <li><a href="about_us.html">ABOUT US</a></li>
               </ul>
-            </li>
-            <!--
-            <li>
-              <img src="../images/myomy.png" class="img-responsive nav-img-m" alt="MY-O-MY">
-            </li>
-            <li class="navbar-right">
-              <a href="#" class=""></a>
-            </li>
-            -->
-            </ul>
-            </nav>
-          </div>
-          <!-- /navbar -->
-          <div class="screen_bg p-header hidden-xs">
-            <video autoplay="autoplay" class="img img-responsive" id="home-main-video" loop="loop" preload="auto" muted="muted" src="https://s3.amazonaws.com/www-assets.invisionapp.com/Homepage/enterprise-loop.mp4">
-              Your browser does not support HTML5 video tags
-            </video>
-            <div class="home-title">
-              <img class="text" src="../images/title_1.png" alt="">
-              <img id="main-video-play" class="play" src="../images/play.png" alt="">
-              <img id="main-video-pause" class="pause" src="../images/pause.png" alt="">
-              <img class="text" src="../images/title_2.png" alt="">
-            </div>
-          </div>
+          </nav>
         </div>
-        <div class="section screen_two">
-            <div class="title_3" id="title_3">
-                <img src="../images/title_3.png" alt="">
-            </div>
-            <div id="s2" class="screen_bg blackwhite">
-                
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-                <div class="carousel-inner center-block" role="listbox">
-                  <div class="item">
-                    <!--to do if dynamic, should be controled by js-->
-                    <div>
-                      <img src="../images/homepage_test.png" class="" alt="series">
-                      <span>SKULL</span>
-                    </div>
-                    <div>
-                      <img src="../images/homepage_test.png" class="" alt="series">
-                      <span>SKULL</span>
-                    </div>
-                    <div>
-                      <img src="../images/homepage_test.png" class="" alt="series">
-                      <span>SKULL</span>
-                    </div>
-                    <div>
-                      <img src="../images/homepage_test.png" class="" alt="series">
-                      <span>SKULL</span>
-                    </div>
-                    <div>
-                      <img src="../images/homepage_test.png" class="" alt="series">
-                      <span>SKULL</span>
-                    </div>
-                  </div>
-                  <div class="item active">
-                    <div>
-                      <img src="../images/homepage_test.png" class="" alt="series">
-                      <span>SKULL</span>
-                    </div>
-                    <div>
-                      <img src="../images/homepage_test.png" class="" alt="series">
-                      <span>SKULL</span>
-                    </div>
-                    <div>
-                      <img src="../images/homepage_test.png" class="" alt="series">
-                      <span>SKULL</span>
-                    </div>
-                    <div>
-                      <img src="../images/homepage_test.png" class="" alt="series">
-                      <span>SKULL</span>
-                    </div>
-                    <div>
-                      <img src="../images/homepage_test.png" class="" alt="series">
-                      <span>SKULL</span>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div>
-                      <img src="../images/homepage_test.png" class="" alt="series">
-                      <span>SKULL</span>
-                    </div>
-                    <div>
-                      <img src="../images/homepage_test.png" class="" alt="series">
-                      <span>SKULL</span>
-                    </div>
-                    <div>
-                      <img src="../images/homepage_test.png" class="" alt="series">
-                      <span>SKULL</span>
-                    </div>
-                    <div>
-                      <img src="../images/homepage_test.png" class="" alt="series">
-                      <span>SKULL</span>
-                    </div>
-                    <div>
-                      <img src="../images/homepage_test.png" class="" alt="series">
-                      <span>SKULL</span>
-                    </div>
-                  </div>
-                </div>
-                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-                </div>
-              
-            </div>
-        </div>
-        <div class="section screen_three">
           
-            <div id="s3" class="screen_bg blackwhite">
-                <div class="center-block title_4">
-                    <p class="store-big-head">"STORE STORE"</p>
-                    <p class="store-little-head">AARRON WALTER, DIRECTOR OF UX AT MAILCHIMP</p>
-                    <div class="discover-btn"><span>DISCOVER<span></div>
-                </div>
+      </div>
+      <!-- Home page-->
+      <div id="dowebok">
+          <div class="section screen_one">
+            <!-- Fixed navbar -->
+            <div id="masthead" class="masthead">
+                <img src="../images/myomy.png" class="img-responsive center-block nav-img" alt="MY-O-MY">
+                <div class="nav_line"></div>
+                <nav>
+                  <ul class="nav nav-justified center-block">
+                    <li><a href="homepage.html">HOME</a></li>
+                    <li><a href="#">BRAND</a></li>
+                    <li><a href="series.html">SERIES</a></li>
+                    <li><a href="store.html">STORES</a></li>
+                    
+                    <li class="active"><a href="about_us.html">ABOUT US</a></li>
+                  </ul>
+                </nav>
+                <div class="nav_line"></div>
             </div>
+            
+            <!-- /navbar -->
+            <div id="videowrap" class="screen_bg p-header hidden-xs">
+              <div id="holder"></div>
+              <div class="videowrap">
+                <video autoplay="autoplay" class="img img-responsive" id="home-main-video-pc" loop="loop" preload="auto" src="../images/video.webm">
+                  Your browser does not support HTML5 video tags
+                </video>
+                <div class="home-title" id="video-title">
+                  <p class="f72">"InVision is a faster way to certainty."</p>
+                  <img class="text" src="../images/title_2.png" alt="">
+                  <img id="main-video-play" class="play" src="../images/play.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section screen_two">
+              
+              <div id="s2" class="screen_bg blackwhite">
+                  <div class="title_3" id="title_3">
+                      <p class="f30">SKULL</p>
+                      <p class="f30">Eternal Inspiration</p>
+                      <p class="f25">OCTOBER 1522, 2015BVLGARI</p>
+                      <p class="f25">OCTOBER BVLGARI</p>
+                      <a href="product.html" class="discover-btn"><span>DISCOVER</span></a>
+                  </div>
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-        </div>
-        <div  class="section screen_four">
-        <!-- Site footer -->
-        
-        <div class="row  hidden-xs hidden-sm cont-text center-block footer">
-              <div class="col-md-3">
-                <h3 class="footer-links-title">About us</h3>
-                <ul class="footer-links list-unstyled">
-                  <li>
-                    <a href="#">About us</a>
-                  </li>
-                  <li>
-                    <a href="#">Foundation</a>
-                  </li><li>
-                    <a href="#">Jobs</a>
-                  </li>
-                </ul>
+                  <div class="carousel-inner center-block" role="listbox">
+                    <div class="item active">
+                      <!--to do if dynamic, should be controled by js-->
+                      <div>
+                        <img src="../images/homepage_test.jpg" class="on" alt="series">
+                        <span>SKULL</span>
+                      </div>
+                      <div>
+                        <img src="../images/homepage_test.jpg" class="" alt="series">
+                        <span>SKULL</span>
+                      </div>
+                      <div>
+                        <img src="../images/homepage_test.jpg" class="" alt="series">
+                        <span>SKULL</span>
+                      </div>
+                      <div>
+                        <img src="../images/homepage_test.jpg" class="" alt="series">
+                        <span>SKULL</span>
+                      </div>
+                      <div>
+                        <img src="../images/homepage_test.jpg" class="" alt="series">
+                        <span>SKULL</span>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div>
+                        <img src="../images/homepage_test.jpg" class="" alt="series">
+                        <span>SKULL</span>
+                      </div>
+                      <div>
+                        <img src="../images/homepage_test.jpg" class="" alt="series">
+                        <span>SKULL</span>
+                      </div>
+                      <div>
+                        <img src="../images/homepage_test.jpg" class="" alt="series">
+                        <span>SKULL</span>
+                      </div>
+                      <div>
+                        <img src="../images/homepage_test.jpg" class="" alt="series">
+                        <span>SKULL</span>
+                      </div>
+                      <div>
+                        <img src="../images/homepage_test.jpg" class="" alt="series">
+                        <span>SKULL</span>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div>
+                        <img src="../images/homepage_test.jpg" class="" alt="series">
+                        <span>SKULL</span>
+                      </div>
+                      <div>
+                        <img src="../images/homepage_test.jpg" class="" alt="series">
+                        <span>SKULL</span>
+                      </div>
+                      <div>
+                        <img src="../images/homepage_test.jpg" class="" alt="series">
+                        <span>SKULL</span>
+                      </div>
+                      <div>
+                        <img src="../images/homepage_test.jpg" class="" alt="series">
+                        <span>SKULL</span>
+                      </div>
+                      <div>
+                        <img src="../images/homepage_test.jpg" class="" alt="series">
+                        <span>SKULL</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  </div>
+                
+              </div>
+          </div>
+          <div class="section screen_three">
+            
+              <div id="s3" class="screen_bg blackwhite">
+                  <div class="center-block title_4">
+                      <p class="store-big-head">"STORE STORE"</p>
+                      <p class="store-little-head">AARRON WALTER, DIRECTOR OF UX AT MAILCHIMP</p>
+                      <a href="store.html" class="discover-btn"><span>DISCOVER</span></a>
+                  </div>
               </div>
 
-              <div class="col-md-3">
-                <h3 class="footer-links-title">Explore</h3>
-                <ul class="footer-links list-unstyled">
-                  <li>
-                    <a href="#">Activists</a>
-                  </li>
-                  <li>
-                    <a href="#">Causes</a>
-                  </li>
-                  <li>
-                    <a href="#">Activist projects</a>
-                  </li>
-                  <li>
-                    <a href="#">Cause campaigns</a>
-                  </li>
-                  <li>
-                    <a href="#">Locations</a>
-                  </li>
-                </ul>
-              </div>
+          </div>
+          <div  class="section screen_four">
+            <!-- Site footer -->
+          
+            <div class="homepage-categories-mobile hidden-xs hidden-sm">
+              <ul class="list-footerstyle clearfix">   
+                <li><a href="homepage.html">home</a></li>
+                <li>/</li>               
+                <li><a href="#">brand</a></li>
+                <li>/</li>               
+                <li><a href="series.html">series</a></li> 
+                <li>/</li>                 
+                <li><a href="store.html">stores</a></li>    
+                <li>/</li>              
+                <li><a href="about_us.html">about us</a></li>        
+              </ul>
+            </div>
+            <div class="social-wrap">
+              <a class="sina" href="#"></a>
+              <a class="youku" href="#"></a>
+              <a class="facebook" href="#"></a>
+              <a class="twitter" href="#"></a>
+              <a class="youtube" href="#"></a>
+              <a class="photo" href="#"></a>
+            </div>
+          
 
-              <div class="col-md-3">
-                <h3 class="footer-links-title">Help</h3>
-                <ul class="footer-links list-unstyled">
-                  <li>
-                    <a href="#" target="_blank">Support</a>
-                  </li>
-                                <li>
-                    <a href="#">Contact us</a>
-                  </li>
-                  <li>
-                    <a href="#">API</a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col-md-3">
-                <h3 class="footer-links-title">Rules</h3>
-                <ul class="footer-links list-unstyled">
-                  <li>
-                    <a href="#">Terms</a>
-                  </li>
-                  <li>
-                    <a href="#">Privacy policy</a>
-                  </li>
-                  <li>
-                    <a href="#">Security</a>
-                  </li>
-                </ul>
-              </div>
-        </div>
-        <div class="homepage-categories-mobile visible-xs visible-sm">
-          <ul class="list-unstyled">                
-            <li><a href="#">BRAND</a></li>                
-            <li><a href="#">SERIES</a></li>                
-            <li><a href="#">STORES</a></li>                
-            <li><a href="#">NEWS</a></li>                
-            <li><a href="#">ABOUT US</a></li>       
-          </ul>
-        </div>
-
-        <img src="../images/myomy.png" class="img-responsive center-block footer-img" alt="MY-O-MY">
-        
-        <!-- /footer -->
-    </div>
-    </div>
+            <img src="../images/myomy.png" class="img-responsive center-block footer-img" alt="MY-O-MY">
+          
+            <!-- /footer -->
+          </div>
+      </div>
     
     <!-- /Home page-->
 
     
     </div> <!-- /container -->
+<div class="container visible-xs visible-sm">
+  <div class="nav-m">
+    <nav>
+      <ul class="nav">
+      <li class="dropdown" style="padding: 15px;">
+        <a href="#" id="js_dropdown" class="dropdown-toggle opennav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">BRAND</a><i class="icon-line"></i></li>
+          <li><a href="series.html">SERIES</a><i class="icon-line"></i></li>
+          <li><a href="store.html">STORES</a><i class="icon-line"></i></li>
+          <li><a href="about.html">ABOUT US</a></li>
+        </ul>
+      </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="video-wrap">
+    <video autoplay="autoplay" class="img img-responsive" id="home-main-video-tw" loop="loop" preload="auto"  muted="muted" src="../images/video.webm">
+      Your browser does not support HTML5 video tags
+    </video>
+    <div class="home-title">
+      <img id="main-video-play-tw" class="play" src="../images/play.png" alt="">
+      <img id="main-video-pause-tw" class="pause" src="../images/pause.png" alt="">
+    </div>
+  </div>
+  <div class="text-wrap">
+    <p class="title-big f30">"STORE STORE"</p>
+    <p class="title-sm f12">AARRON WALTER, DIRECTOR OF UX AT MAILCHIMP</p>
+  </div>
+  <div class="img-wrap">
+    <img class="checkimg" src="#" alt="">
+    <div class="text-wrap">
+      <p class="title-big f22">"SKULL"</p>
+      <p class="title-big f22">Eternal Inspiration</p>
+      <p class="title-sm f12">OCTOBER 1522, 2015BVLGARI</p>
+    </div>
+  </div>
+  <div id="slider" class="swipe" style="visibility: visible;">
+    <div class="swipe-wrap">
+      <figure>
+        <div class="wrap">
+          <div><img class="image" src="../images/tw_slide1.jpg"> </img></div>
+          <div><img class="image" src="../images/tw_slide2.jpg"> </img></div>
+          <div><img class="image" src="../images/tw_slide1.jpg"> </img></div>
+        </div>
+      </figure>
+      <figure>
+        <div class="wrap">
+          <div><img class="image" src="../images/tw_slide2.jpg"> </img></div>
+          <div><img class="image" src="../images/tw_slide1.jpg"> </img></div>
+          <div><img class="image" src="../images/tw_slide2.jpg"> </img></div>
+        </div>
+      </figure>
+      <figure>
+        <div class="wrap">
+          <div><img class="image" src="../images/tw_slide1.jpg"> </img></div>
+          <div><img class="image" src="../images/tw_slide1.jpg"> </img></div>
+          <div><img class="image" src="../images/tw_slide1.jpg"> </img></div>
+        </div>
+      </figure>
+    </div>
+  </div>
+  <nav>
+    <ul id="position">
+      <li class="on"></li>
+      <li class=""></li>
+      <li class=""></li>
+    </ul>
+  </nav>
+  <div class="img-wrap">
+    <span class="sliders">1-3</span> / <span class="number">8</span>
+  </div>
+  <div class="screen_three">
+    <div class="screen_bg colorful">
+      <div class="center-block title_4">
+          <p class="store-big-head f30">"STORE STORE"</p>
+          <p class="store-little-head f12">AARRON WALTER, DIRECTOR OF UX AT MAILCHIMP</p>
+          <a href="#" class="discover-btn"><span class="f12">DISCOVER</span></a>
+      </div>
+    </div>
+  </div>
 
-
+    <div class="homepage-categories-mobile visible-xs visible-sm">
+      <ul class="list-unstyled"> 
+        <li><a href="homepage.html">HOME</a></li>       
+        <li><a href="#">BRAND</a></li>                
+        <li><a href="series.html">SERIES</a></li>                
+        <li><a href="store.html">STORES</a></li>                
+        <li><a href="about_us.html">ABOUT US</a></li>        
+      </ul>
+    </div>
+    <div class="social-wrap">
+      <a class="sina" href="#"></a>
+      <a class="youku" href="#"></a>
+      <a class="facebook" href="#"></a>
+      <a class="twitter" href="#"></a>
+      <a class="youtube" href="#"></a>
+      <a class="photo" href="#"></a>
+    </div>
+    <img src="../images/myomy.png" class="img-responsive center-block footer-img" alt="MY-O-MY">
+    <img src="../images/sjgs.jpg" width="55" class="img-responsive center-block" alt="上海工商">
+</div>
+<div class="bg-mast"></div>
+<div class="video-wrap-fullscreen">
+ <div class="video-close"></div>
+</div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -302,6 +336,8 @@
     <script src="../jquery/ie10-viewport-bug-workaround.js"></script>
 
     <script src="../jquery/jquery.fullPage.min.js"></script>
+    <script src="../jquery/swipe.js"></script>
     <script src="../js/homepage.js"></script>
+    <script src="../js/aboutus.js"></script>
   </body>
 </html>

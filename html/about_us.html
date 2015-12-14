@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="luella">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="MY-O-MY about us">
@@ -18,7 +22,7 @@
     <link href="../css/about_us.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../bootstrap/docs/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="../jquery/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,33 +35,48 @@
 
     <div class="container">
     <!-- Fixed navbar -->
-    
-    <div class="masthead hidden-xs hidden-sm">
+      <div class="masthead mainnav hidden-xs hidden-sm clearfix">
+        <div class="nav-wrap-pc clearfix">
+          <p class="nav-log">
+            <span><img src="../images/myomy.png" class="img-responsive masthead-brand" alt="MY-O-MY"></span>
+          </p>
+          <nav>
+              <ul class="nav masthead-nav">
+                  <li><a href="homepage.html">HOME</a></li>
+                  <li><a href="#">BRAND</a></li>
+                  <li><a href="series.html">SERIES</a></li>
+                  <li><a href="store.html">STORES</a></li>
+                  
+                  <li><a href="about_us.html">ABOUT US</a></li>
+              </ul>
+          </nav>
+        </div>
+    </div>
+    <div class="masthead hidden-xs hidden-sm" style="position:relative;">
         <img src="../images/myomy.png" class="img-responsive center-block nav-img" alt="MY-O-MY">
-        <div class="nav_line"></div>
         <nav>
           <ul class="nav nav-justified center-block">
-            <li><a href="#">HOME</a></li>
+            <li><a href="homepage.html">HOME</a></li>
             <li><a href="#">BRAND</a></li>
-            <li><a href="#">SERIES</a></li>
-            <li><a href="#">STORES</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li class="active"><a href="#">ABOUT US</a></li>
+            <li><a href="series.html">SERIES</a></li>
+            <li><a href="store.html">STORES</a></li>
+            
+            <li class="active"><a href="about_us.html">ABOUT US</a></li>
           </ul>
         </nav>
+        <div class="nav_line"></div>
     </div>
     
     <div class="nav-m visible-xs visible-sm">
       <nav>
-      <ul class="nav" style="padding: 15px;">
-      <li class="dropdown">
-        <a href="#" id="js_dropdown" class="dropdown-toggle opennav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"></a>
+      <ul class="nav">
+      <li class="dropdown" style="padding: 15px;">
+        <a id="js_dropdown" class="dropdown-toggle opennav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"></a>
         <ul class="dropdown-menu">
           <li><a href="#">BRAND</a><i class="icon-line"></i></li>
-          <li><a href="#">SERIES</a><i class="icon-line"></i></li>
-          <li><a href="#">STORES</a><i class="icon-line"></i></li>
-          <li><a href="#">NEWS</a><i class="icon-line"></i></li>
-          <li><a href="#">ABOUT US</a></li>
+          <li><a href="series.html">SERIES</a><i class="icon-line"></i></li>
+          <li><a href="store.html">STORES</a><i class="icon-line"></i></li>
+          <li><a href="about_us.html">ABOUT US</a></li>
         </ul>
       </li>
       <!--
@@ -72,8 +91,8 @@
       </nav>
     </div>
 
-    <img src="../images/aboutus_bigpic.png" class="img-responsive center-block hidden-xs hidden-sm" alt="about us">
-    <img src="../images/aboutus_bigpic_m.png" class="img-responsive center-block visible-xs visible-sm" alt="about us">
+    <img src="../images/aboutus_bigpic.jpg" class="img-responsive center-block hidden-xs hidden-sm" alt="about us" >
+    <img src="../images/aboutus_bigpic_m.jpg" class="img-responsive center-block visible-xs visible-sm" alt="about us">
 
     <p class="cont-title">A WORLDWIDE COMPANY,<br> A PART OF THE LVMH GROUP</p>
 
@@ -89,95 +108,51 @@
 
     <div class="row cont-text center-block">
       <div class="col-lg-6">
-        <img src="../images/aboutus_culture.png" class="img-responsive center-block cont-pic" alt="our culture">
+        <img src="../images/aboutus_culture.jpg" class="img-responsive center-block cont-pic" alt="our culture">
         <h2>Our culture</h2>
         <p>As of v8.0, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.Donec id elit non mi porta gravida at eget metus. </p>
       </div>
       <div class="col-lg-6">
-        <img src="../images/aboutus_value.png" class="img-responsive center-block cont-pic" alt="our values">
+        <img src="../images/aboutus_value.jpg" class="img-responsive center-block cont-pic" alt="our values">
         <h2>Our values</h2>
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. </p>
      </div>
     </div>
 
     <!-- Site footer -->
-    <div class="row  hidden-xs hidden-sm cont-text center-block footer">
-          <div class="col-md-3">
-            <h3 class="footer-links-title">About us</h3>
-            <ul class="footer-links list-unstyled">
-              <li>
-                <a href="#">About us</a>
-              </li>
-              <li>
-                <a href="#">Foundation</a>
-              </li><li>
-                <a href="#">Jobs</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-md-3">
-            <h3 class="footer-links-title">Explore</h3>
-            <ul class="footer-links list-unstyled">
-              <li>
-                <a href="#">Activists</a>
-              </li>
-              <li>
-                <a href="#">Causes</a>
-              </li>
-              <li>
-                <a href="#">Activist projects</a>
-              </li>
-              <li>
-                <a href="#">Cause campaigns</a>
-              </li>
-              <li>
-                <a href="#">Locations</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-md-3">
-            <h3 class="footer-links-title">Help</h3>
-            <ul class="footer-links list-unstyled">
-              <li>
-                <a href="#" target="_blank">Support</a>
-              </li>
-                            <li>
-                <a href="#">Contact us</a>
-              </li>
-              <li>
-                <a href="#">API</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-md-3">
-            <h3 class="footer-links-title">Rules</h3>
-            <ul class="footer-links list-unstyled">
-              <li>
-                <a href="#">Terms</a>
-              </li>
-              <li>
-                <a href="#">Privacy policy</a>
-              </li>
-              <li>
-                <a href="#">Security</a>
-              </li>
-            </ul>
-          </div>
-    </div>
-    <div class="homepage-categories-mobile visible-xs visible-sm">
-      <ul class="list-unstyled">                
-        <li><a href="#">BRAND</a></li>                
-        <li><a href="#">SERIES</a></li>                
-        <li><a href="#">STORES</a></li>                
-        <li><a href="#">NEWS</a></li>                
-        <li><a href="#">ABOUT US</a></li>       
+    <div class="homepage-categories-mobile hidden-xs hidden-sm">
+      <ul class="list-footerstyle clearfix">   
+        <li><a href="homepage.html">home</a></li>
+        <li>/</li>             
+        <li><a href="#">brand</a></li>
+        <li>/</li>               
+        <li><a href="series.html">series</a></li> 
+        <li>/</li>                 
+        <li><a href="store.html">stores</a></li>    
+        <li>/</li>              
+        <li><a href="about_us.html">about us</a></li>        
       </ul>
     </div>
-
+    <div class="homepage-categories-mobile visible-xs visible-sm">
+      <ul class="list-unstyled">  
+      <li><a href="homepage.html">HOME</a></li>              
+        <li><a href="#">BRAND</a></li>                
+        <li><a href="series.html">SERIES</a></li>                
+        <li><a href="store.html">STORES</a></li>                
+                        
+        <li><a href="about_us.html">ABOUT US</a></li>        
+      </ul>
+    </div>
+    <div class="social-wrap">
+      <a class="sina" href="#"></a>
+      <a class="youku" href="#"></a>
+      <a class="facebook" href="#"></a>
+      <a class="twitter" href="#"></a>
+      <a class="youtube" href="#"></a>
+      <a class="photo" href="#"></a>
+    </div>
     <img src="../images/myomy.png" class="img-responsive center-block footer-img" alt="MY-O-MY">
+    <img src="../images/sjgs.jpg" width="55" class="img-responsive center-block visible-xs visible-sm" alt="上海工商">
 
     </div> <!-- /container -->
 

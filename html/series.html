@@ -7,6 +7,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="MY-O-MY series">
     <meta name="author" content="luella">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta name="author" content="luella">
 
     <title>MY-O-MY | Series</title>
 
@@ -14,7 +18,7 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="../css/about_us.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/jquery.fullPage.css">
+    <link rel="stylesheet" href="../css/jquery.fullPage-forseries.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/series.css">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -30,78 +34,55 @@
 
   <body>
 
-    <div class="container">
+    <div class="container  hidden-xs hidden-sm">
       <!--nav-->
       <div class="masthead clearfix hidden-xs hidden-sm">
-        <img src="../images/myomy.png" class="img-responsive masthead-brand" alt="MY-O-MY">
-        <nav>
-          <ul class="nav masthead-nav">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">BRAND</a></li>
-            <li><a href="#">SERIES</a></li>
-            <li><a href="#">STORES</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">THE MAISON</a></li>
-          </ul>
-        </nav>
+        <div class="nav-wrap-pc clearfix">
+          <p class="nav-log">
+            <span><img src="../images/myomy.png" class="img-responsive masthead-brand" alt="MY-O-MY"></span>
+          </p>
+          <nav>
+            <ul class="nav masthead-nav">
+              <li><a href="homepage.html">HOME</a></li>
+              <li><a href="#">BRAND</a></li>
+              <li><a href="series.html">SERIES</a></li>
+              <li><a href="store.html">STORES</a></li>
+              
+              <li><a href="about_us.html">ABOUT US</a></li>
+            </ul>
+          </nav>
+        </div>
+        
       </div>
     
-      <div class="nav-m visible-xs visible-sm">
-        <nav>
-        <ul class="nav">
-        <li class="dropdown">
-          <a href="#" id="js_dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">BRAND</a></li>
-            <li><a href="#">SERIES</a></li>
-            <li><a href="#">STORES</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">ABOUT US</a></li>
-          </ul>
-        </li>
-        <!--
-        <li>
-          <img src="../images/myomy.png" class="img-responsive nav-img-m" alt="MY-O-MY">
-        </li>
-        <li class="navbar-right">
-          <a href="#" class=""></a>
-        </li>
-        -->
-        </ul>
-        </nav>
-        <!--
-        <div class="nav-title">
-          <img src="../images/myomy.png" class="img-responsive nav-img-m" alt="MY-O-MY">
-        </div>
-      -->
-      </div>
+      
       <!--/nav-->
-      <div id="dowebok">
+      <div id="dowebok" class="dowebok">
         
         <!--series moduels-->
         <div class="section">
           
-          <div class="row serie-one screen_bg">
-            <div class="pull-left col-md-4 ">
+          <div class="serie-one screen_bg">
+            <div class="serflag pull-left">
               <div class="top">
-                <span class="serie-plus">+</span>
+                <span class="serie-plus serie-plus_1">+</span>
               </div>
               <div class="mid" style="display:none; background-color:#fff;">
-                <div class="mid1" style="">
-                  <img src="../images/serie-detail.png" class="img-responsive" alt="serie">
+                <div class="mid1" >
+                 <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
                 </div>
-                <div class="mid2"style="">
-                  <img src="../images/serie-detail.png" class="img-responsive" alt="serie">
+                <div class="mid2">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
                 </div>
-                <div class="mid3"style="">
-                  <img src="../images/serie-detail.png" class="img-responsive" alt="serie">
+                <div class="mid3">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
                 </div>
               </div>
               <div class="bot" style="display:none; background-color:#fff;">
-                <button type="button" class="serie-details-btn btn btn-sm btn-default">查看最近商店</button>
+                <button type="button" class="serie-details-btn btn btn-sm btn-default"><a href="product.html">查看此系列商品</a></button>
               </div>
             </div>
-            <div class="pull-right col-md-6 up-serie">
+            <div class="serflag pull-right col-md-6 up-serie">
               <p>SKULL</p>
               <p>HERITAGE JEWELRY ESHIBITION</p>
               <p class="store-cont">OCTOBER 15 - NOVEMBER 22, 2015</p>
@@ -111,174 +92,244 @@
           </div>
         </div>
         <div class="section">  
-          <div class="row serie-two screen_bg">
-            <div class="pull-left col-md-5">
-              <p>SKULL</p>
-              <p>HERITAGE JEWELRY ESHIBITION</p>
-              <p class="store-cont">OCTOBER 15 - NOVEMBER 22, 2015</p>
-              <p>BVLGARI</p>
-              <p>FLAGSHIP STORE</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          
-          <div class="row serie-three screen_bg  up-serie">
-            <div class="pull-right col-md-5">
-              <p>SKULL</p>
-              <p>HERITAGE JEWELRY ESHIBITION</p>
-              <p class="store-cont">OCTOBER 15 - NOVEMBER 22, 2015</p>
-              <p>BVLGARI</p>
-              <p>FLAGSHIP STORE</p>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="row serie-four screen_bg">
-            <div class="pull-left col-md-5">
-              <p>SKULL</p>
-              <p>HERITAGE JEWELRY ESHIBITION</p>
-              <p class="store-cont">OCTOBER 15 - NOVEMBER 22, 2015</p>
-              <p>BVLGARI</p>
-              <p>FLAGSHIP STORE</p>
-            </div>
-          </div>
-        </div>
-        <!--
-        <div class="section">
-          <div class="row serie-five screen_bg  up-serie">
-            <div class="pull-right col-md-5">
-              <p>SKULL</p>
-              <p>HERITAGE JEWELRY ESHIBITION</p>
-              <p class="store-cont">OCTOBER 15 - NOVEMBER 22, 2015</p>
-              <p>BVLGARI</p>
-              <p>FLAGSHIP STORE</p>
-            </div>
-          </div>
-          <div class="row serie-six screen_bg">
-            <div class="pull-left col-md-5">
-              <p>SKULL</p>
-              <p>HERITAGE JEWELRY ESHIBITION</p>
-              <p class="store-cont">OCTOBER 15 - NOVEMBER 22, 2015</p>
-              <p>BVLGARI</p>
-              <p>FLAGSHIP STORE</p>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="row serie-seven screen_bg  up-serie">
-            <div class="pull-right col-md-5">
-              <p>SKULL</p>
-              <p>HERITAGE JEWELRY ESHIBITION</p>
-              <p class="store-cont">OCTOBER 15 - NOVEMBER 22, 2015</p>
-              <p>BVLGARI</p>
-              <p>FLAGSHIP STORE</p>
-            </div>
-          </div>
-          <div class="row serie-eight screen_bg">
-            <div class="pull-left col-md-5">
-              <p>SKULL</p>
-              <p>HERITAGE JEWELRY ESHIBITION</p>
-              <p class="store-cont">OCTOBER 15 - NOVEMBER 22, 2015</p>
-              <p>BVLGARI</p>
-              <p>FLAGSHIP STORE</p>
-            </div>
-          </div>
-          <!--
-          <footer>
-            <div class="row social">
-              <div class="col-md-12">
-                <ul class="social-md">
-                  <li class="facebook"><a href="https://www.facebook.com/linuxacademycom" target="_blank">Facebook</a></li>
-                  <li class="twitter"><a href="http://twitter.com/linuxacademyCOM" target="_blank">Twitter</a></li>
-                  <li class="googleplus"><a href="https://plus.google.com/u/0/100366823841228588106/" target="_blank">Google Plus</a></li>
-                  <li class="linkedin"><a href="https://www.linkedin.com/company/3761108" target="_blank">Linked In</a></li>
-                </ul>
+          <div class="serie-two screen_bg">
+            <div class="serflag pull-right">
+              <div class="top">
+                <span class="serie-plus serie-plus_2">+</span>
+              </div>
+              <div class="mid" style="display:none; background-color:#fff;">
+                <div class="mid1" >
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+                <div class="mid2">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+                <div class="mid3">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+              </div>
+              <div class="bot" style="display:none; background-color:#fff;">
+                <button type="button" class="serie-details-btn btn btn-sm btn-default"><a href="product.html">查看此系列商品</a></button>
               </div>
             </div>
-          </footer>
+            <div class="serflag pull-left col-md-5">
+              <p>SKULL</p>
+              <p>HERITAGE JEWELRY ESHIBITION</p>
+              <p class="store-cont">OCTOBER 15 - NOVEMBER 22, 2015</p>
+              <p>BVLGARI</p>
+              <p>FLAGSHIP STORE</p>
+            </div>
+          </div>
+        </div>
+
+        <div  id="s3" class="section">
+          <div class="serie-three screen_bg  up-serie">
+            <div class="serflag pull-left">
+              <div class="top">
+                <span class="serie-plus serie-plus_3">+</span>
+              </div>
+              <div class="mid" style="display:none; background-color:#fff;">
+                <div class="mid1" >
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+                <div class="mid2">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+                <div class="mid3">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+              </div>
+              <div class="bot" style="display:none; background-color:#fff;">
+                <button type="button" class="serie-details-btn btn btn-sm btn-default"><a href="product.html">查看此系列商品</a></button>
+              </div>
+            </div>
+            <div class="serflag pull-right col-md-5">
+              <p>SKULL</p>
+              <p>HERITAGE JEWELRY ESHIBITION</p>
+              <p class="store-cont">OCTOBER 15 - NOVEMBER 22, 2015</p>
+              <p>BVLGARI</p>
+              <p>FLAGSHIP STORE</p>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="serie-four screen_bg">
+            <div class="serflag pull-right">
+              <div class="top">
+                <span class="serie-plus serie-plus_4">+</span>
+              </div>
+              <div class="mid" style="display:none; background-color:#fff;">
+                <div class="mid1" >
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+                <div class="mid2">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+                <div class="mid3">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+              </div>
+              <div class="bot" style="display:none; background-color:#fff;">
+                <button type="button" class="serie-details-btn btn btn-sm btn-default"><a href="product.html">查看此系列商品</a></button>
+              </div>
+            </div>
+            <div class="serflag pull-left col-md-5">
+              <p>SKULL</p>
+              <p>HERITAGE JEWELRY ESHIBITION</p>
+              <p class="store-cont">OCTOBER 15 - NOVEMBER 22, 2015</p>
+              <p>BVLGARI</p>
+              <p>FLAGSHIP STORE</p>
+            </div>
+          </div>
+        </div>
         
+        <div class="section">
+          <div class="serie-five screen_bg  up-serie">
+            <div class="serflag pull-right">
+              <div class="top">
+                <span class="serie-plus serie-plus_5">+</span>
+              </div>
+              <div class="mid" style="display:none; background-color:#fff;">
+                <div class="mid1" >
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+                <div class="mid2">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+                <div class="mid3">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+              </div>
+              <div class="bot" style="display:none; background-color:#fff;">
+                <button type="button" class="serie-details-btn btn btn-sm btn-default"><a href="product.html">查看此系列商品</a></button>
+              </div>
+            </div>
+            <div class="serflag pull-left col-md-5">
+              <p>SKULL</p>
+              <p>HERITAGE JEWELRY ESHIBITION</p>
+              <p class="store-cont">OCTOBER 15 - NOVEMBER 22, 2015</p>
+              <p>BVLGARI</p>
+              <p>FLAGSHIP STORE</p>
+            </div>
+          </div>
         </div>
-        -->
-
-
-        <div class="row  hidden-xs hidden-sm cont-text center-block footer">
-            <div class="col-md-3">
-              <h3 class="footer-links-title">About us</h3>
-              <ul class="footer-links list-unstyled">
-                <li>
-                  <a href="#">About us</a>
-                </li>
-                <li>
-                  <a href="#">Foundation</a>
-                </li><li>
-                  <a href="#">Jobs</a>
-                </li>
-              </ul>
+        <div class="section">
+          <div class="serie-six screen_bg  up-serie">
+            <div class="serflag pull-left">
+              <div class="top">
+                <span class="serie-plus serie-plus_6">+</span>
+              </div>
+              <div class="mid" style="display:none; background-color:#fff;">
+                <div class="mid1" >
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+                <div class="mid2">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+                <div class="mid3">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+              </div>
+              <div class="bot" style="display:none; background-color:#fff;">
+                <button type="button" class="serie-details-btn btn btn-sm btn-default"><a href="product.html">查看此系列商品</a></button>
+              </div>
             </div>
-
-            <div class="col-md-3">
-              <h3 class="footer-links-title">Explore</h3>
-              <ul class="footer-links list-unstyled">
-                <li>
-                  <a href="#">Activists</a>
-                </li>
-                <li>
-                  <a href="#">Causes</a>
-                </li>
-                <li>
-                  <a href="#">Activist projects</a>
-                </li>
-                <li>
-                  <a href="#">Cause campaigns</a>
-                </li>
-                <li>
-                  <a href="#">Locations</a>
-                </li>
-              </ul>
+            <div class="serflag pull-right col-md-5">
+              <p>SKULL</p>
+              <p>HERITAGE JEWELRY ESHIBITION</p>
+              <p class="store-cont">OCTOBER 15 - NOVEMBER 22, 2015</p>
+              <p>BVLGARI</p>
+              <p>FLAGSHIP STORE</p>
             </div>
-
-            <div class="col-md-3">
-              <h3 class="footer-links-title">Help</h3>
-              <ul class="footer-links list-unstyled">
-                <li>
-                  <a href="#" target="_blank">Support</a>
-                </li>
-                              <li>
-                  <a href="#">Contact us</a>
-                </li>
-                <li>
-                  <a href="#">API</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-md-3">
-              <h3 class="footer-links-title">Rules</h3>
-              <ul class="footer-links list-unstyled">
-                <li>
-                  <a href="#">Terms</a>
-                </li>
-                <li>
-                  <a href="#">Privacy policy</a>
-                </li>
-                <li>
-                  <a href="#">Security</a>
-                </li>
-              </ul>
-            </div>
+          </div>
+          
         </div>
-        <div class="homepage-categories-mobile visible-xs visible-sm">
-          <ul class="list-unstyled">                
-            <li><a href="#">BRAND</a></li>                
-            <li><a href="#">SERIES</a></li>                
-            <li><a href="#">STORES</a></li>                
-            <li><a href="#">NEWS</a></li>                
-            <li><a href="#">ABOUT US</a></li>       
-          </ul>
+        <div class="section">
+          <div class="serie-seven screen_bg  up-serie">
+            <div class="serflag pull-right">
+              <div class="top">
+                <span class="serie-plus serie-plus_7">+</span>
+              </div>
+              <div class="mid" style="display:none; background-color:#fff;">
+                <div class="mid1" >
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+                <div class="mid2">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+                <div class="mid3">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+              </div>
+              <div class="bot" style="display:none; background-color:#fff;">
+                <button type="button" class="serie-details-btn btn btn-sm btn-default"><a href="product.html">查看此系列商品</a></button>
+              </div>
+            </div>
+            <div class="serflag pull-left col-md-5">
+              <p>SKULL</p>
+              <p>HERITAGE JEWELRY ESHIBITION</p>
+              <p class="store-cont">OCTOBER 15 - NOVEMBER 22, 2015</p>
+              <p>BVLGARI</p>
+              <p>FLAGSHIP STORE</p>
+            </div>
+          </div>
         </div>
+        <div class="section">
+          <div class="serie-eight screen_bg">
+            <div class="serflag pull-right">
+              <div class="top">
+                <span class="serie-plus serie-plus_8">+</span>
+              </div>
+              <div class="mid" style="display:none; background-color:#fff;">
+                <div class="mid1" >
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+                <div class="mid2">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+                <div class="mid3">
+                  <a href="product.html"><img src="../images/serie-detail.png" class="img-responsive" alt="serie"></a>
+                </div>
+              </div>
+              <div class="bot" style="display:none; background-color:#fff;">
+                <button type="button" class="serie-details-btn btn btn-sm btn-default"><a href="product.html">查看此系列商品</a></button>
+              </div>
+            </div>
+            <div class="serflag pull-left col-md-5">
+              <p>SKULL</p>
+              <p>HERITAGE JEWELRY ESHIBITION</p>
+              <p class="store-cont">OCTOBER 15 - NOVEMBER 22, 2015</p>
+              <p>BVLGARI</p>
+              <p>FLAGSHIP STORE</p>
+            </div>
+          </div>
+        </div>
+        
 
+
+        <div class="homepage-categories-mobile hidden-xs hidden-sm">
+              <ul class="list-footerstyle clearfix"> 
+                <li><a href="homepage.html">home</a></li>
+                <li>/</li>                
+                <li><a href="#">brand</a></li>
+                <li>/</li>               
+                <li><a href="series.html">series</a></li> 
+                <li>/</li>                 
+                <li><a href="store.html">stores</a></li>    
+                <li>/</li>              
+                <li><a href="about_us.html">about us</a></li>        
+              </ul>
+            </div>
+            <div class="social-wrap">
+              <a class="sina" href="#"></a>
+              <a class="youku" href="#"></a>
+              <a class="facebook" href="#"></a>
+              <a class="twitter" href="#"></a>
+              <a class="youtube" href="#"></a>
+              <a class="photo" href="#"></a>
+            </div>
+
+        <img src="../images/myomy.png" class="img-responsive center-block footer-img" alt="MY-O-MY">
         
 
         <!--/series moduels-->
@@ -286,6 +337,130 @@
 
     </div> <!-- /container -->
 
+    <!--tw-->
+<div class="container visible-xs visible-sm">
+  <div class="nav-m">
+        <nav>
+          <ul class="nav">
+            <li class="dropdown" style="padding: 15px;">
+              <a href="#" id="js_dropdown" class="dropdown-toggle opennav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">BRAND</a><i class="icon-line"></i></li>
+                <li><a href="series.html">SERIES</a><i class="icon-line"></i></li>
+                <li><a href="store.html">STORES</a><i class="icon-line"></i></li>
+                <li><a href="about.html">ABOUT US</a></li>
+              </ul>
+            </li>
+            <li class="nav-right">
+              <a id="js_dropdown_right" class="dropdown-toggle downnav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"></a>
+              <!--
+              <ul class="dropdown-menu">
+                <li><a href="#"><img src="../images/serie-detail.png" class="img-responsive" alt="CROWN">SERIE1</a></li>
+                <li><a href="#"><img src="../images/serie-detail.png" class="img-responsive" alt="CROWN">SERIE2</a></li>
+                <li><a href="#"><img src="../images/serie-detail.png" class="img-responsive" alt="CROWN">SERIE3</a></li>
+                <li><a href="#"><img src="../images/serie-detail.png" class="img-responsive" alt="CROWN">SERIE4</a></li>
+                <li><a href="#"><img src="../images/serie-detail.png" class="img-responsive" alt="CROWN">SERIE5</a></li>
+              </ul>
+              -->
+              <div class="dropdown-menu">
+                <div>
+                  <a href="#"><img src="../images/s_crown.png" class="img-responsive" alt="CROWN"><span>CROWN</span></a>
+                </div>
+                <div>
+                  <a href="#"><img src="../images/s_skull.png" class="img-responsive" alt="SKULL"><span>SKULL</span></a>
+                </div>
+                <div>
+                  <a href="#"><img src="../images/s_shield.png" class="img-responsive" alt="SHIELD"><span>SHIELD</span></a>
+                </div>
+                <div>
+                  <a href="#"><img src="../images/s_cross.png" class="img-responsive" alt="CROSS"><span>CROSS</span></a>
+                </div>
+                <div>
+                  <a href="#"><img src="../images/s_star.png" class="img-responsive" alt="STAR"><span>STAR</span></a>
+                </div>
+                <div>
+                  <a href="#"><img src="../images/s_crown.png" class="img-responsive" alt="CROWN"><span>CROWN</span></a>
+                </div>
+                <div>
+                  <a href="#"><img src="../images/s_skull.png" class="img-responsive" alt="SKULL"><span>SKULL</span></a>
+                </div>
+                <div>
+                  <a href="#"><img src="../images/s_shield.png" class="img-responsive" alt="SHIELD"><span>SHIELD</span></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+  </div>
+  <ul class="img-wrap">
+    <li>
+      <a href="">
+        <img src="../images/tw_series1.jpg" alt="">
+        <div class="text-wrap">
+          <p class="f25">ROSE</p>
+          <p class="f12">Eternal Inspiration</p>
+          <p class="f12">OCTOBER 15 - NOVEMBER 22, 2015A</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <img src="../images/tw_series2.jpg" alt="">
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <img src="../images/tw_series3.jpg" alt="">
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <img src="../images/tw_series4.jpg" alt="">
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <img src="../images/tw_series5.jpg" alt="">
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <img src="../images/tw_series6.jpg" alt="">
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <img src="../images/tw_series7.jpg" alt="">
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <img src="../images/tw_series8.jpg" alt="">
+      </a>
+    </li>
+  </ul>
+      <div class="homepage-categories-mobile visible-xs visible-sm">
+      <ul class="list-unstyled"> 
+      <li><a href="homepage.html">HOME</a></li>               
+        <li><a href="#">BRAND</a></li>                
+        <li><a href="series.html">SERIES</a></li>                
+        <li><a href="store.html">STORES</a></li>                
+                        
+        <li><a href="about_us.html">ABOUT US</a></li>        
+      </ul>
+    </div>
+    <div class="social-wrap">
+      <a class="sina" href="#"></a>
+      <a class="youku" href="#"></a>
+      <a class="facebook" href="#"></a>
+      <a class="twitter" href="#"></a>
+      <a class="youtube" href="#"></a>
+      <a class="photo" href="#"></a>
+    </div>
+    <img src="../images/myomy.png" class="img-responsive center-block footer-img" alt="MY-O-MY">
+    <img src="../images/sjgs.jpg" width="55" class="img-responsive center-block" alt="上海工商">
+
+</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -296,7 +471,7 @@
     <script src="../jquery/ie10-viewport-bug-workaround.js"></script>
     
     <script src="../js/aboutus.js"></script>
-    <script src="../jquery/jquery.fullPage.min.js"></script>
+    <script src="../jquery/jquery.fullPage.js"></script>
     <script src="../js/series.js"></script>
   </body>
 </html>
