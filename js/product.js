@@ -246,6 +246,7 @@ $(function() {
         });
         //视频
         var video = document.getElementById('home-main-video-pc');
+        video.src = '../images/video.webm';
         var dom = $('.videowrap').get(0);
         $(dom).click(function(){
           if(video.paused){
@@ -307,6 +308,7 @@ $(function() {
         });
 
         var menus = $('#menu span');
+        $('#brand_tw .list').width($(window).width());
         var swipelength = $('#swipe .swipe-wrap').length;
         var mySwipe = new Swipe(document.getElementById('swipe'), {
             speed: 400,
